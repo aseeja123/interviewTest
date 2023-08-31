@@ -1,0 +1,11 @@
+<!-- <title>List of users</title>
+<div *ngFor="let user of users">
+<h1>{{user.firstName}}</h1>
+</div> -->
+<!-- <mat-list role="list" *ngFor="let user of users">
+  <mat-list-item role="listitem">{{user.firstName}}</mat-list-item>
+
+</mat-list> -->
+<mat-paginator [length]="30" [pageSize]="1" aria-label="Select page"
+  *ngFor="let user of users">{{user.firstName}}
+</mat-paginator>
